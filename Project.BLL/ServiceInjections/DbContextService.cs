@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project.BLL.ServiceInjections
 {
-    internal class DbContextService
+    public class DbContextService
     {
     }
 }
