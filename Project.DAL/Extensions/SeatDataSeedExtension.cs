@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.BLL.ServiceInjections
+namespace Project.DAL.Extensions
 {
-    public class CustomIdentityService
+    internal class SeatDataSeedExtension
     {
     }
 }
