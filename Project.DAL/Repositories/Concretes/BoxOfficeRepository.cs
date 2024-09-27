@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.DAL.Repositories.Concretes
 {
-    public class BoxOfficeRepository<T> : BaseRepository<BoxOffice>, IBoxOfficeRepository
+    public class BoxOfficeRepository: BaseRepository<BoxOffice>, IBoxOfficeRepository
     {
         public BoxOfficeRepository(MyContext db) : base(db)
         {

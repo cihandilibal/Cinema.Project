@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Project.DAL.Repositories.Concretes
 {
-    public class AppUserRepository<T> : BaseRepository<AppUser>, IAppUserRepository
+    public class AppUserRepository: BaseRepository<AppUser>, IAppUserRepository
     {
         UserManager<AppUser> _userManager;
         

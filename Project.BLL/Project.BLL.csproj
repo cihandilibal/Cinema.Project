@@ -7,16 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Project.DAL\Project.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Managers\Concretes\" />
-    <Folder Include="Managers\Abstracts\" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
   </ItemGroup>
 
 </Project>

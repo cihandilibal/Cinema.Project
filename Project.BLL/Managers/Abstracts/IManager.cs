@@ -6,9 +6,9 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.DAL.Repositories.Abstracts
+namespace Project.BLL.Managers.Abstracts
 {
-    public interface IRepository<T> where T: IEntity
+    public interface IManager<T> where T: IEntity
     {
         //List Command
 
@@ -24,12 +24,12 @@ namespace Project.DAL.Repositories.Abstracts
         //Modify Commands
         void Add(T item);
         Task AddAsync(T item);
-        void Delete(T item);
-        Task DeleteAsync(T item);
+        string Delete(T item);
+        Task<string> DeleteAsync(T item);
         void Update(T item);
         Task UpdateAsync(T item);
-        void Destroy(T item);
-        Task DestroyAsync(T item);
+        string Destroy(T item);
+        Task<string> DestroyAsync(T item);
 
         //Linq Commands
         List<T> Where(Expression<Func<T, bool>> exp);
@@ -47,11 +47,5 @@ namespace Project.DAL.Repositories.Abstracts
 
         List<T> GetLastDatas(int count);
         List<T> GetFirstDatas(int count);
-
-
-
-
-
-
     }
 }

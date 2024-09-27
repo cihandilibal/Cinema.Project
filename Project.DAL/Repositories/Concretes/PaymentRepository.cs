@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.DAL.Repositories.Concretes
 {
-    public class PaymentRepository<T> : BaseRepository<Payment>, IPaymentRepository
+    public class PaymentRepository: BaseRepository<Payment>, IPaymentRepository
     {
         public PaymentRepository(MyContext db) : base(db)
         {

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project.DAL.Repositories.Concretes
 {
-    public class TheaterRepository<T> : BaseRepository<Theater>, ITheaterRepository
+    public class TheaterRepository: BaseRepository<Theater>, ITheaterRepository
     {
         public TheaterRepository(MyContext db) : base(db)
         {
